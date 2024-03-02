@@ -51,7 +51,7 @@ public class Main {
 
     public static void main(String[] args) {
         List<Bird> birds = new ArrayList<Bird>();
-        birds.add(new Bird());
+        birds.add(new Swan());
         birds.add(new Penguin());
         letBirdsFly(birds);
     }

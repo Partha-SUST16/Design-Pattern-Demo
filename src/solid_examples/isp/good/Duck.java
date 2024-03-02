@@ -1,6 +1,6 @@
 package solid_examples.isp.good;
 
-public class Duck implements FlyingCreature, FeatheredCreature {
+public class Duck implements  FeatheredCreature {
     private String currentLocation;
     private Integer numberOfFeathers;
 
@@ -27,9 +27,5 @@ public class Duck implements FlyingCreature, FeatheredCreature {
 
     public void molt() {
         this.numberOfFeathers -= 1;
-    }
-
-    public void fly() {
-        throw new UnsupportedOperationException();
     }
 }

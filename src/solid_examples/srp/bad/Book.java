@@ -1,5 +1,6 @@
 package solid_examples.srp.bad;
 
+// ActionBook, ThrillerBook
 public class Book {
     private String bookName;
 
