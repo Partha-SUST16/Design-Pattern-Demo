@@ -17,6 +17,14 @@ public class GoodExample {
         @Override
         public void publish(Document document) {
             System.out.println("Document approved for publishable status.");
+            document.setState(new MState2());
+        }
+    }
+
+    static class MState2 implements DocumentState {
+        @Override
+        public void publish(Document document) {
+            System.out.println("Document approved for publishable status.");
             document.setState(new PublishedState());
         }
     }
@@ -51,3 +59,11 @@ public class GoodExample {
         document.publish();
     }
 }
+
+/**
+ * 1. Modularity
+ * 2. Flexibility and Extensibility
+ * 3. Code duplication prevention
+ * 4. Clear code Understanding
+ * 5. Ease of transition
+ */

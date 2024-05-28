@@ -1,5 +1,6 @@
 package design_patterns.behavioural.strategy;
 
+//Context
 public class Sorter {
     private SortingStrategy sortingStrategy;
 
